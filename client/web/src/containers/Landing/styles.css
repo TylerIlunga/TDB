@@ -1,0 +1,16 @@
+.landing-container {
+  display: flex;
+  background: linear-gradient(320deg, #fc466b 0%, #3f5efb 100%);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-mock-text {
+  font-size: 30px;
+  color: white;
+}
+
+.landing-mock-text a {
+  color: pink;
+}

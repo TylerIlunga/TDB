@@ -1,0 +1,38 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.17.0 (a74acad)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: persist
+  name: persist
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: persist
+    spec:
+      containers:
+      - env:
+        - name: EMAIL_BASE
+          value: email
+        - name: PG_DB
+          value: lune_search_dev
+        - name: PG_HOST
+          value: pgdb
+        - name: PG_PASS
+          value: thefirst
+        - name: PG_USER
+          value: tilios
+        image: searchpersistdev
+        name: search_persist
+        ports:
+        - containerPort: 3333
+        resources: {}
+      restartPolicy: Always
+status: {}

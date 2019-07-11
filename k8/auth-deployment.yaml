@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.17.0 (a74acad)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: auth
+  name: auth
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: auth
+    spec:
+      containers:
+      - env:
+        - name: EMAIL_BASE
+          value: email
+        - name: PERSIST_BASE
+          value: persist
+        image: searchauthdev
+        name: search_auth
+        ports:
+        - containerPort: 4444
+        resources: {}
+      restartPolicy: Always
+status: {}

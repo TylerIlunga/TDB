@@ -1,0 +1,144 @@
+.dashboardContainer {
+  display: grid;
+  grid-template-rows: 7% 90% 3%;
+  height: 100%;
+}
+
+.dashboardBodyContainer {
+  height: 100%;
+}
+
+.dashboardHeaderMenuList {
+  width: 250px;
+}
+
+.dashboardHeader {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.dashboardHeaderLabel {
+  display: grid;
+  grid-column: 1 / 2 / 1;
+  align-items: center;
+}
+
+.dashboardHeaderLabel a {
+  width: 50%;
+  margin: 0px;
+  padding-left: 35px;
+  color: pink;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dashboardHeaderOptions {
+  display: grid;
+  grid-column: 2 / 2 / 1;
+  align-items: center;
+}
+
+.dashboardHeaderOptionsButton {
+  height: 75%;
+  width: 25%;
+  justify-self: end;
+}
+
+.dashboardBodyHeader {
+  width: 100%;
+}
+
+#toolbarBodyHeader {
+  display: grid;
+}
+
+.searchBar {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-gap: 0px 10px;
+  border-radius: 50px;
+  background-color: white;
+  align-items: center;
+}
+
+.searchBarMenu_Subject {
+  justify-self: center;
+}
+
+.dataTableContainer {
+  padding: 0 25px;
+  margin: 10px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.createFormContainer {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  height: 100%;
+  padding: 0px 35px;
+}
+
+.createForm {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-gap: 60px 0px;
+}
+
+.createFormControl {
+  width: 25%;
+}
+
+.createFormLabel {
+  font-size: 20px;
+}
+
+.createFormTextFieldControl {
+  width: 75%;
+}
+
+.createFormTextField {
+  width: 100%;
+}
+
+.createFormSubmitButton {
+  display: flex;
+  border: none;
+  background: pink;
+  height: 50px;
+  width: 33.33%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventMessageContainer {
+  padding-top: 20px;
+}
+
+.eventMessageContainer p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.eventMessageContainer .successMessage {
+  color: green;
+}
+
+.eventMessageContainer .errorMessage {
+  color: red;
+}
+
+.dashboardFooter {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+.dashboardFooter p {
+  margin: 0px;
+}
